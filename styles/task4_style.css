@@ -1,0 +1,25 @@
+p {
+    margin-bottom: 0;
+}
+
+table {
+      border: 1px solid cadetblue;
+      border-collapse: collapse;
+      background-color: lightskyblue;
+
+}
+
+th {
+      border: 1px solid cadetblue;
+
+}
+
+td {
+      border: 1px solid cadetblue;
+      width: 90px;
+      text-align: center;
+}
+
+.small {
+      width: 65px;
+}
