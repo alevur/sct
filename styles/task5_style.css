@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    width: 400px;
+    text-align: left;
+}
+.name {
+    background-color: lightgrey;
+    font-weight: bold;
+    text-align: center;
+}
+.three {
+    background-color: #f3de8a;
+}
+.sum {
+    background-color: coral;
+}
