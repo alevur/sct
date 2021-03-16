@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        .table_title {
+            color: blue;
+            font-size: 20px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .main_table {
+            border-collapse: collapse;
+            /*border: 1px solid black;*/
+            margin: 0 auto;
+            width: 600px;
+        }
+        .main_table td,
+        .main_table th{
+            border: 1px solid black;
+            padding: 0 3px 5px;
+        }
+        .main_table thead th {
+            background-color: gray;
+            color: white;
+        }
+        .total {
+            background-color: orange;
+            text-align: right;
+        }
+        .date {
+            background-color: green;
+        }
+        .icon {
+            background-image: url("https://e7.pngegg.com/pngimages/877/759/png-clipart-business-sos-futur-emerging-technologies-technology-password-checkmark-miscellaneous-angle.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="table_title">Наименование таблицы</div>
+    <table class="main_table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Sex</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alex</td>
+            <td>a@mail.ru</td>
+            <td class="icon">M</td>
+            <td class="date">15/23/12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mihael</td>
+            <td>b@mail.ru</td>
+            <td class="icon">M</td>
+            <td class="date">15/23/12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sara</td>
+            <td>g@mail.ru</td>
+            <td class="icon">F</td>
+            <td class="date">15/23/12</td>
+        </tr>
+        <tr class="total">
+            <td colspan="5">Всего 3</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
