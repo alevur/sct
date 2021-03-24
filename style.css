@@ -1,20 +1,59 @@
-body {
-    background-color: black;
-    color: white;
+/*Блок меню*/
+h3 {
+    padding-left: 10px;
 }
-
-.bor {
-    border: 1px solid white;
-    padding: 20px;
-    overflow: hidden;
-    width: 85%;
-    margin: 150px auto;
-}
-
-.textcols {
-    height: 250px;
-    width: 30%;
+.left_panel {
+    background: #e7d8a8;
     float: left;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    margin: 0 0 0 5px;
+    padding-right: 10px;
+    width: 125px;
+}
+.navbar {
+    padding-left: 10px;
+}
+.navbar > li {
+    color: black;
+    list-style-type: none;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.navbar > li  a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+/*Блок с картинками*/
+img {
+    width: 150px;
+}
+.content_panel {
+    background: #ebbfa3;
+    display: flex;
+}
+.picture {
+    background-color: white;
+    border: 1px solid black;
+    float: left;
+    height: 160px;
+    margin: 10px;
+    padding: 10px 10px 25px 10px;
+    text-align: center;
+    width: 150px;
+}
+.new_string {
+    clear: both;
+    padding: 70px 0 20px 10px;
+}
+
+
+/*Подвал*/
+.bottom_panel {
+    background: #995044;
+    clear: both;
+    color: white;
+    margin-left: 5px;
+    padding: 10px;
 }
