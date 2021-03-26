@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .block::before {
+            content: "<";
+        }
+        .block::after {
+            content: ">";
+        }
+        .block::selection {
+            color: aqua;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <blockquote class="block">Какая-то цитата</blockquote>
+</body>
+</html>
