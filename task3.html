@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            background: white;
+            margin: 50px auto;
+            width: 370px;
+            border-radius: 5%;
+            position: relative;
+        }
+        .title {
+            border-bottom: 1px solid black;
+            margin-top: 5px;
+            color: #8388a0;
+        }
+        .month, .year, .cvc {
+            width: 28px;
+        }
+        .name {
+            width: 240px;
+        }
+        .card_number {
+            width: 285px;
+        }
+        .btn {
+            width: 100%;
+            height: 40px;
+            margin-top: 5px;
+            background-color: #259bfc;
+            border: 0;
+            font-weight: bold;
+            color: white;
+        }
+        .no_spin::-webkit-inner-spin-button {
+            display: none;
+        }
+        .price {
+            position: absolute;
+            top: -15px;
+            right: -14px;
+            width: 40px;
+            font: 14px/40px Helvetica, Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: #e54930;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);;
+        }
+        .card {
+            padding: 10px;
+        }
+        input:focus {
+            border-color: #46aefe;
+            outline: none;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px #46aefe;
+        }
+        input {
+            height: 25px;
+            padding: 5px;
+            border-radius: 7px;
+            border: 1px solid;
+        }
+        body {
+            background-color: #dadfea;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form class="card">
+                <h3 class="title">
+                    Данные карты
+                    <span class="price">$10</span>
+                </h3>
+            <p>
+                <input type="text" class="name" placeholder="Имя держателя" autofocus>
+                <input type="number" class="month no_spin" placeholder="MM">
+                <input type="number" class="year no_spin" placeholder="YY">
+            </p>
+            <p>
+                <input type="number" step="any" class="card_number no_spin" placeholder="4111 1111 1111 1111">
+                <input type="number" class="cvc no_spin" placeholder="CVC">
+            </p>
+            <p>
+                <input type="submit" value="Отправить" class="btn">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            background: white;
+            margin: 50px auto;
+            text-align: center;
+            width: 350px;
+        }
+        .login_form {
+            padding: 40px;
+        }
+        .btn_login {
+            background-color: #00b141;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+        }
+        .not_reg {
+            color: #b3b3b3;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        input {
+            border: 0;
+            box-sizing: border-box;
+            font-size: 15px;
+            margin-bottom:15px;
+            padding: 15px;
+            width: 100%;
+        }
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        body {
+            background: #76b852;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form class="login_form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <input type="submit" value="LOGIN" class="btn_login">
+            <p class="not_reg">Not registered? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+</body>
+</html>
