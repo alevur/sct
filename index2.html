@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        .card_box {
+            background-color: #ded5d5;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 300px;
+            position: relative;
+        }
+        .card_box .box_title {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-bottom: 1px solid gray;
+        }
+        .card_box .card_amount {
+            background-color: darkred;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 16px;
+            padding: 3px;
+            color: white;
+            /*height: 45px;*/
+            /*width: 45px;*/
+            z-index: 3;
+        }
+        .card_amount .card_amount > div {
+            border: 1px solid white;
+            border-radius: 50%;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 5px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="card_box">
+        <div class="box_title">
+            Checkout
+        </div>
+        <div class="box_body">
+            <form action=""></form>
+                <div class="flex_box">
+                    <div class="left_flex">
+                        <input type="text" name="name" placeholder="Your name">
+                    </div>
+                    <div class="right_flex"></div>
+                </div>
+
+        </div>
+        <div class="card_amount">
+            <div>$10</div>
+        </div>
+    </div>
+
+</body>
+</html>
