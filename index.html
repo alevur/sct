@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        body {
+            margin: 20px 10% auto 10%;
+        }
         li{
             list-style-type: none;
             margin-bottom: 10px;
@@ -11,21 +14,32 @@
         ul{
             padding-left: 15px;
         }
-        .menu_loan {
-            float: left;
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        th {
+            padding-bottom: 10px;
+        }
+        td {
+            padding: 10px 5px;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
         }
         .menu a{
             text-decoration: none;
             color: #2b2626;
         }
-        .menu{
+        .menu, .request{
             border: 2px solid blue;
             border-radius: 10px;
-            width: 200px;
             list-style-type: none;
-            box-sizing: content-box;
-
-
         }
         .loan {
             padding-top: 20px;
@@ -38,13 +52,16 @@
         .loan_message {
             font-size: 10px;
         }
-
+        .request {
+            margin-left: 10%;
+            width: 70%;
+        }
 
     </style>
 </head>
 <body>
-    <div>
-        <div class="menu_loan">
+    <div class="main">
+        <div>
             <div class="menu">
                 <ul>
                     <li><a href="">Моя карточка</a></li>
@@ -64,9 +81,51 @@
             </div>
         </div>
         <div class="request">
-            <tr>
-                <th>Мои заявки</th>
-            </tr>
+            <table>
+                <h1>Мои заявки</h1>
+                <tr>
+                    <th>Номер заявки</th><th>Дата</th><th>Сумма</th><th>Статус</th>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+                <tr>
+                    <td>0000001</td><td>16.04.2021</td><td>15000</td><td>Заём выдан</td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
